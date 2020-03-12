@@ -42,7 +42,7 @@ cp -r /tmp/$TOMCAT7_CORE_UNPACKED_DIRNAME/* $CATALINA_HOME
 { which java; } || { yum install java; }
 
 # Create the service init.d script
-cat > /etc/init.d/tomcat7
+cat > /etc/init.d/tomcat7 <<'EOF'
 #!/bin/bash
 # description: Tomcat7 Start Stop Restart
 # processname: tomcat7
